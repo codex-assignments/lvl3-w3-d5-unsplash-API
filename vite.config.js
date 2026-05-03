@@ -4,5 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/lvl3-w3-d5-unsplash-API/",
   plugins: [react(), tailwindcss()],
-})
+});

@@ -4,10 +4,10 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router'
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-    <App />
+    <BrowserRouter basename="/lvl3-w3-d5-unsplash-API">
+      <App />
     </BrowserRouter>
   </StrictMode>,
-)
+);
