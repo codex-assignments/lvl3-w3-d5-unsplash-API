@@ -1,17 +1,29 @@
 import { useState } from 'react'
-import { Route, Routes, Link } from "react-router";
+import { Route, Routes, Link, Router } from "react-router";
 
 import './App.css'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import SearchPage from "./pages/SearchPage";
+import AboutPage from "./pages/AboutPage";
+
+
 
 function App() {
 
 
   return (
     <>
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <h1 className="text-3xl font-bold text-blue-600 underline">
-          Tailwind is Working!
-        </h1>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<SearchPage />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+        </main>
+
+        <Footer />
       </div>
     </>
   );
